@@ -1,0 +1,113 @@
+:root {
+  --font-family-si-yuan-normal: '思源黑体-Normal';
+  --font-family-si-yuan-medium: '思源黑体-Medium';
+  --font-family-si-yuan-regular: '思源黑体-Regular';
+  --font-color-white: #fff;
+  --font-color-main-1: #1D2129;
+  --font-color-main-2: rgba(29, 33, 41, .65);
+  --font-color-main-3: rgba(29, 33, 41, .45);
+  --font-color-main-4: rgba(29, 33, 41, .25);
+  --font-color-main-5: rgba(29, 33, 41, .06);
+
+  --el-color-primary: #3476ff !important;
+  --el-color-primary-2: rgba(52, 118, 255, .06) !important;
+
+  --el-text-color-regular:  #1D2129 !important;
+}
+
+.use-scroll-y {
+  //cursor: pointer;
+  //overflow-y: scroll;
+  &::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 0;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #e5e5e5;
+  }
+
+  &::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    //-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    //border-radius: 10px;
+    opacity: 0;
+  }
+}
+
+.use-scroll-x {
+  cursor: pointer;
+  overflow-x: scroll;
+  &:hover {
+    &::-webkit-scrollbar {
+      display: block;
+    }
+  }
+  &::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 5px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 5px;
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #e5e5e5;
+  }
+
+  &::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    //-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    //border-radius: 10px;
+    opacity: 0;
+  }
+}
+
+
+.line-1 {
+  overflow: hidden; /* 规定超出内容宽度的元素隐藏 */
+  white-space: nowrap; /* 规定文本是否折行 */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.line-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.line-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.line-4 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+
